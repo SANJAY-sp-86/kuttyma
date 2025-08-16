@@ -43,4 +43,4 @@ A beautiful, responsive photography and love diary website built with HTML, SCSS
 develolped by sanjay
 ---
 
-Made with 💚
+Made with 💚 : https://sanjay-sp-86.github.io/kuttyma/
