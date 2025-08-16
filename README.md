@@ -40,10 +40,7 @@ A beautiful, responsive photography and love diary website built with HTML, SCSS
 - Modify SCSS in `scss/style.scss` for advanced styling.
 
 ## License
-
-Template by [Colorlib](https://colorlib.com) | Licensed under CC BY 3.0  
-Custom modifications © 2024 Sanjay
-
+develolped by sanjay
 ---
 
 Made with 💚
