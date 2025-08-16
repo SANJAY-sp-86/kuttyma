@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Deepanaa | Mine</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/favicon.ico">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Background Video */
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        /* Floating Hearts Overlay */
+        .heart-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .heart {
+            position: absolute;
+            bottom: -50px;
+            font-size: 2rem;
+            opacity: 0.3; /* 30% opacity */
+            animation: float-hearts 8s linear infinite;
+        }
+
+        .heart:nth-child(1) { left: 10%; animation-duration: 10s; font-size: 2.5rem; }
+        .heart:nth-child(2) { left: 30%; animation-duration: 12s; font-size: 2rem; }
+        .heart:nth-child(3) { left: 50%; animation-duration: 9s; font-size: 3rem; }
+        .heart:nth-child(4) { left: 70%; animation-duration: 11s; font-size: 2.2rem; }
+        .heart:nth-child(5) { left: 90%; animation-duration: 13s; font-size: 2.8rem; }
+
+        @keyframes float-hearts {
+            0% {
+                transform: translateY(0) scale(1);
+                opacity: 0.3;
+            }
+            50% {
+                transform: translateY(-300px) scale(1.2);
+                opacity: 0.25;
+            }
+            100% {
+                transform: translateY(-600px) scale(1);
+                opacity: 0.3;
+            }
+        }
+
+        /* Cute Unmute Button */
+        .sound-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            animation: pulse 2s infinite;
+        }
+
+        .sound-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.6);
+            background: linear-gradient(135deg, #fad0c4, #ff9a9e);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.08); }
+            100% { transform: scale(1); }
+        }
+
+        /* Animated Logo */
+        .animated-logo {
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ff69b4;
+            transition: transform 0.3s, color 0.3s;
+            animation: logo-bounce 2s infinite;
+        }
+        .animated-logo:hover {
+            transform: scale(1.15) rotate(-5deg);
+            color: #00c9a7;
+        }
+        @keyframes logo-bounce {
+            0%, 100% { transform: translateY(0);}
+            20% { transform: translateY(-8px);}
+            40% { transform: translateY(0);}
+            60% { transform: translateY(-4px);}
+            80% { transform: translateY(0);}
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="sonar-load"></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Grids -->
+    <div class="grids d-flex justify-content-between">
+        <div class="grid1"></div><div class="grid2"></div><div class="grid3"></div>
+        <div class="grid4"></div><div class="grid5"></div><div class="grid6"></div>
+        <div class="grid7"></div><div class="grid8"></div><div class="grid9"></div>
+    </div>
+
+    <!-- ***** Main Menu Area Start ***** -->
+    <div class="mainMenu d-flex align-items-center justify-content-between">
+        <!-- Close Icon -->
+        <div class="closeIcon">
+            <i class="ti-close" aria-hidden="true"></i>
+        </div>
+        <!-- Logo Area -->
+        <div class="logo-area">
+            <a href="index.html" class="animated-logo">💚Kutty Ma🫂</a>
+        </div>
+        <!-- Nav -->
+        <div class="sonarNav">
+            <nav>
+                <ul>
+                    <li class="nav-item active"><a class="nav-link" href="index.html">💚Love💚</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-me.html">My Heart ❤️</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Video.html">Video🌸</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Love_Diary.html">Love Diary 📖</a></li>
+                    <li class="nav-item"><a class="nav-link" href="whispers.html">Whispers 💌</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Copwrite Text -->
+        <div class="copywrite-text">
+            <p>
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved | Template by 
+                <a href="" target="_blank">Sanjay</a>
+            </p>
+        </div>
+    </div>
+    <!-- ***** Main Menu Area End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="menu-area d-flex justify-content-between">
+                        <!-- Logo Area -->
+                        <div class="logo-area">
+                            <a href="index.html" class="animated-logo"><strong>💚Kutty Ma🫂</strong></a>
+                        </div>
+                        <!-- Menu Icon -->
+                        <span class="navbar-toggler-icon" id="menuIcon"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Video Background + Hearts + Audio ***** -->
+    <video id="bg-video" autoplay muted loop class="video-background">
+        <source src="./img/video/kutty.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Floating Hearts Overlay -->
+    <div class="heart-container">
+        <span class="heart">💖</span>
+        <span class="heart">❤️</span>
+        <span class="heart">💘</span>
+        <span class="heart">💕</span>
+        <span class="heart">💞</span>
+    </div>
+
+    <!-- Background Audio -->
+    <audio autoplay loop>
+        <source src="./audio/love-song.mp3" type="audio/mpeg">
+        Your browser does not support HTML5 audio.
+    </audio>
+
+    <!-- Sound Button -->
+    <button id="sound-btn" class="sound-btn">🔈 Unmute</button>
+
+
+
+    <!-- JS Scripts -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/active.js"></script>
+
+    <script>
+        const video = document.getElementById('bg-video');
+        const btn = document.getElementById('sound-btn');
+
+        btn.addEventListener('click', () => {
+            if (video.muted) {
+                video.muted = false;
+                btn.textContent = '🔊 Mute';
+            } else {
+                video.muted = true;
+                btn.textContent = '🔈 Unmute';
+            }
+        });
+    </script>
+
+</body>
+</html>
